@@ -1,0 +1,299 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+    box-sizing: border-box;
+    /* background-color: #000; */
+}
+
+body,h1,h3,h4,p {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16pt;
+    line-height: 1.5;
+    color: #fff;
+    /* max-width: 1100px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: #000;
+}
+
+#header {
+    background-color: #000;
+    overflow: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#header a {
+    font-family: Helvetica;
+}
+a:hover {
+    color: #f00;
+}
+
+.logo {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background: url(/assets/128px-Logo_Netflix.png) no-repeat;    /* be sure to set width */
+    width:  75px;
+    height:  5px;
+    padding: 20px;
+    position: relative;
+}
+
+.leftMenu {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 26%;
+}
+
+.leftMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 2px 0 0 25px;
+}
+
+.leftMenu ul li {
+    display: inline-block;
+    padding: 15px;
+}
+
+.leftMenu ul li a.dropdown {
+    color: #f00;
+}
+
+.rightMenu {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 5%;
+    color: black;
+}
+
+.rightMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rightMenu ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.fa-search:before  {
+    content: "\f0a2";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #fff;
+    font-size: 18px;
+    padding-right: 0.5em;
+
+}
+
+.fa-bell-o:before  {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+        text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #fff;
+    font-size: 18px;
+    padding-right: 0.5em;
+
+}
+
+.fa-user:before  {
+    content: "\f007";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #fff;
+    font-size: 18px;
+    padding-right: 0.5em;
+}
+
+.fa-caret-down:before  {
+    content: "\f0d7";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #fff;
+    font-size: 18px;
+    padding-right: 0.5em;
+}
+
+#largeImage {
+    padding: 200px 25px ;
+    background: -webkit-linear-gradient(45deg, rgba(231, 31, 17, .7) 0%,#000000 100%), url(https://timedotcom.files.wordpress.com/2015/11/rocky.jpeg);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.description-box {
+    width: 50%;
+}
+
+.description-box h1 {
+    font-family: serif;
+    font-weight: 700;
+    font-size: 60px;
+    margin: 0;
+}
+
+.description-box h3 {
+    font-family: Helvetica;
+    font-weight: 400;
+    font-style: 60px;
+    margin: 0;
+}
+
+.description-box h4 {
+    font-family: Helvetica;
+    font-weight: 300;
+    margin: 0;
+}
+
+.description-box p {
+    margin-top: 25px !important;
+    font-family: Helvetica;
+    font-weight: 100;
+    font-style: 18px;
+    margin: 0 0 50px 0;
+}
+
+.fa-caret-left, .fa-plus {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color:rgba(0,0,0,0.4);
+    border-radius: 15px;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+.fa-caret-left{
+    margin-right: 10px;
+}
+.fa-caret-left:before {
+    content: "\f0d9";
+    font-family: FontAwesome;
+    display: inline-block;
+    padding: 0 10px;
+    color: #f00;
+}
+
+.fa-plus:before {
+    content: "\f067";
+    font-family: FontAwesome;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.fa-caret-left:hover {
+    background: rgba(0, 0, 0, .6);
+}
+
+.fa-plus:hover {
+    background: rgba(0, 0, 0, .6);
+    border: 2px solid rgba(0, 0, 0, .6);
+}
+
+section {
+    width: 100%;
+    background: #000; 
+}
+
+.videoBoxes {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* position: relative; */
+    background: #f00;
+    width: 300px;
+    min-height: 150px;
+    font-size: 16px;
+    margin: 2% .75%;
+    padding: 15px;
+}
+
+.videoBoxes h4 {
+    font-family: Helvetica;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+.videoBoxes p {
+    display: none;
+}
+
+.video1 {
+    background: linear-gradient(45deg, rgba(231, 31, 17, .5) 0%,#000000 100%), url(http://1.bp.blogspot.com/-zzoOCO90ZxA/Uc4qhnXo-3I/AAAAAAAADw8/3feMU1nlrPI/s1600/four_weddings_and_a_funeral-362264622-large.jpg);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.video2 {
+    background: linear-gradient(45deg, rgba(231, 31, 17, .5) 0%,#000000 100%), url(https://i.ytimg.com/vi/PHlJQCyqiaI/maxresdefault.jpg);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.video3 {
+    background: linear-gradient(45deg, rgba(231, 31, 17, .5) 0%,#000000 100%), url(https://icecreamconvos.com/wp-content/uploads/2019/07/67400576_3234788349993743_2327251724672172032_o.jpg);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.video4 {
+    background: linear-gradient(45deg, rgba(231, 31, 17, .5) 0%,#000000 100%), url(https://tenyearsago.files.wordpress.com/2015/07/charlie61.jpg);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+    .videoBoxes {
+        width: 95%;
+        margin: 2.5%;
+    }
+    .videoBoxes h4 {
+        font-family: Helvetica;
+        font-weight: 100;
+        font-size: 40px;
+    }
+    .videoBoxes p{
+        display: block;
+        font-family: Helvetica;
+        font-size: 20px;
+    }
+}
